@@ -1,0 +1,17 @@
+//  draw a (squared) swirl
+10  size = 20
+11  length = 1
+//  go far enough from the borders (assuming canvas is at least 15x15)
+20  ROTATE 45
+30  FORWARD 7
+40  ROTATE -45
+50  COLOR @
+60  PEN DOWN
+//  main loop, draw a side of the "swirl", then rotate
+100 FORWARD length
+110 ROTATE 90
+120 size += -1
+130 length += 1
+140 GOTONZ 100 size
+// all done
+200 PEN UP

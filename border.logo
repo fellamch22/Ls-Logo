@@ -1,0 +1,16 @@
+// let's draw a $ border around the screen !
+10 xsteps = width
+11 xsteps += -1
+12 ysteps = height
+13 ysteps += -1
+20 PEN DOWN
+21 COLOR $
+30 FORWARD xsteps    // top border
+40 ROTATE -90
+50 FORWARD ysteps    // right border
+60 ROTATE -90
+70 FORWARD xsteps    // bottom border
+80 ROTATE -90
+90 FORWARD ysteps    // left border
+// all done
+91 PEN UP

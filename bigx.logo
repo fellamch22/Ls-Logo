@@ -1,0 +1,22 @@
+10  size = 30
+11  PEN DOWN
+12  COLOR \
+// we start at the top-left of the "X", facing right
+// draw the "\" part of the "X"
+20  ROTATE -45
+30  FORWARD size
+// we are now at bottom-right, go to bottom-left
+60  ROTATE -135
+61 PEN UP
+70  FORWARD size
+// we are now at bottom-left, facing left
+// go up 1 row, because we draw behind the turtle
+71 ROTATE -90
+72 FORWARD 1
+// draw the "/" part of the "X"
+80  ROTATE -45
+91 PEN DOWN
+92 COLOR /
+100 FORWARD size
+// all done
+130 PEN UP

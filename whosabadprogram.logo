@@ -1,0 +1,13 @@
+// missing instruction with position 10
+11  length = 1
+20  COLOR *
+30  PEN DOWN
+100 FORWARD length
+XX  this is a parse ERROR !
+110 ROTATE 91  // rotation that is not a multiple of 45
+120 undefined += 1  // increment an undefined variable
+130 GOTO 100  // repeated position
+140 xpos = 42  // assign to a builtin variable
+150 GOTO 2000  // jump to a non existent program position
+160 GOTONZ a b c  // more subtle parse error
+130 PEN UP  // repeated position
